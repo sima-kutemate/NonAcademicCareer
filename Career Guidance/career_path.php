@@ -39,7 +39,7 @@
     <!-- header section ends -->    
      
 <div class="heading" style = "background:url(images/) no-repeat">
-    <h1>about us</h1>
+    <h1>career_path</h1>
 </div>
 
     <!-- footer section starts -->
