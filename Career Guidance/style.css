@@ -142,7 +142,7 @@ section{
     font-size: 2.2rem;
     color: var(--light-white);
     padding-bottom: 1rem;
-    animation:fadeIn .3s linear backwards .2s;
+    animation:fadeIn .2s linear backwards .2s;
 }
 
 .home .swiper-slide .content h3{
@@ -152,11 +152,11 @@ section{
     line-height: 1;
     text-shadow: var(--text-shadow);
     padding: 1rem 0;
-    animation:fadeIn .3s linear backwards .4s;
+    animation:fadeIn .2s linear backwards .4s;
 }
 
 .home .swiper-slide .content .btn{
-    animation:fadeIn .3s linear backwards .6s;
+    animation:fadeIn .2s linear backwards .6s;
 }
 
 .home .swiper-button-next,
@@ -212,6 +212,38 @@ section{
     color: var(--white);
     font-size: 1.7rem;
     padding-top: 1rem;
+}
+
+.home-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-about .image{
+    flex: 1 1 41rem;
+}
+
+.home-about .image img{
+    width: 80%;
+}
+
+.home-about .content{
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: var(--light-bg);
+}
+
+.home-about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.home-about .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
 }
 
 /* footer section  */
