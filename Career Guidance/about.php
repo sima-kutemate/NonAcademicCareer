@@ -42,6 +42,38 @@
     <h1>about us</h1>
 </div>
 
+<!-- about section starts  -->
+
+<section class="about">
+    <div class="image">
+        <img src="images/logo.png" alt="">
+    </div>
+    <div class="content">
+        <h3>why choose us?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Odit facere doloremque praesentium asperiores inventore ipsum quod animi? Officia animi ut, 
+            assumenda at delectus accusamus repellat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Quo, dolorum aut? Quia consequatur debitis corrupti?</p>
+<div class="icons-container">
+    <div class="icons">
+        <i class="fas fa-map"></i>
+        <span>top destinations</span>
+    </div>
+    <div class="icons">
+        <i class="fas fa-hand-holding-usd"></i>
+        <span>top destinations</span>
+    </div>
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <span>top destinations</span>
+    </div>
+</div>
+    </div>
+</section>
+
+<!-- about section ends -->
+
     <!-- footer section starts -->
 
 <section class="footer">
