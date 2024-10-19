@@ -38,7 +38,7 @@
 
     <!-- header section ends -->    
      
-<div class="heading" style = "background:url(images/) no-repeat">
+<div class="heading" style = "background:url() no-repeat">
     <h1>about us</h1>
 </div>
 
