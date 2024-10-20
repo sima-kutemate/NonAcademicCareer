@@ -24,17 +24,17 @@ var swiper = new Swiper(".home-slider", {
   });
 
 
-var swiper = new Swiper(".review-slider", {
-    loop:true,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
+// var swiper = new Swiper(".review-slider", {
+//     loop:true,
+//     breakpoints: {
+//       640: {
+//         slidesPerView: 1,
+//       },
+//       768: {
+//         slidesPerView: 2,
+//       },
+//       1024: {
+//         slidesPerView: 3,
+//       },
+//     },
+//   });
