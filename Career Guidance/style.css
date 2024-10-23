@@ -334,44 +334,95 @@ background: var(--light-bg);
 }
 
 /* review section */
-.review{
-    background: var(--light-bg);
+.review {
+    padding: 5rem 0;
+    background-color: var(--light-bg);
+    display: flex;
+    justify-content: center;
 }
-.review .slide{
-padding: 2rem;
-border: var(--border);
-background: var(--white);
-text-align: center;
-box-shadow: var(--box-shadow);
-user-select: none;
+.review-container {
+    max-width: 1200px; /* Set a max width for the container */
+    overflow: hidden; /* Hide any overflow to ensure a clean view */
+    position: relative; /* Position relative for inner elements */
+    padding-left: 2rem; /* Gap from the left */
+    padding-right: 2rem; /* Gap from the right */
 }
-.review .slide .stars{
-    padding-bottom: .5rem;
+
+.review-slider {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enables snap scrolling for each slide */
+    gap: 2rem; /* Gap between slides */
+    padding: 2rem 0;
+    padding-left: 1rem;
 }
-.review .slide .stars i{
-    font-size: 1.7rem;
+
+.review-slider::-webkit-scrollbar {
+    height: 8px; /* Custom height for the scrollbar */
+}
+
+.review-slider::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); /* Customize scrollbar color */
+    border-radius: 10px;
+}
+
+.review-slider::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Customize scrollbar track color */
+}
+
+.slide {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    padding: 2rem;
+    min-width: 300px; /* Width of each slide */
+    max-width: 350px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* Snaps each div to the start when scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide:hover{
+  border-color: var(--main-color);
+}
+
+.stars {
+    margin-bottom: 1rem;
+}
+
+.stars i {
     color: var(--main-color);
 }
-.review .slide p{
-    font-size: 1.5rem;
-    color: var(--light-black);
-    line-height: 2;
-    padding: 1rem 0;
-}
-.review .slide h3{
-    font-size: 2rem;
-    color: var(--black);
-}
-.review .slide span{
-    font-size: 1.5rem;
-    color: var(--main-color);
-    display: block;
-}
-.review .slide img{
-    height: 7rem;
-    width: 7rem;
+
+.slide img {
     border-radius: 50%;
     margin-top: 1rem;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.slide h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.slide p {
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.slide span{
+    color: var(--main-color);
+    font-weight: 5rem;
+}
+
+.review-slider::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
 }
 
 /* footer section  */
@@ -430,6 +481,15 @@ user-select: none;
     section{
         padding: 3rem 5%;
     }
+    .review-container {
+        padding-left: 3rem; /* Reduce padding for medium screens */
+        padding-right: 3rem;
+    }
+
+    .slide {
+        min-width: 250px; /* Reduce slide width for smaller screens */
+        max-width: 300px;
+    }
  }
 
  @media (max-width:991px){
@@ -471,6 +531,23 @@ user-select: none;
         margin: 2rem;
         text-align: center;
      }
+     .review {
+        padding: 3rem 0; /* Reduce section padding on smaller screens */
+    }
+
+    .review-container {
+        padding-left: 2rem; /* Further reduce padding */
+        padding-right: 2rem;
+    }
+
+    .review-slider {
+        padding-left: 1.5rem; /* Less space inside the scroll area */
+    }
+
+    .slide {
+        min-width: 220px; /* Adjust slide width for mobile devices */
+        max-width: 270px;
+    }
  }
 
  @media (max-width:450px){
@@ -479,5 +556,31 @@ user-select: none;
     }
     .heading-title{
         font-size: 3.5rem;
+    }
+    .review {
+        padding: 1.5rem 0; /* Minimal padding for small screens */
+    }
+
+    .review-container {
+        padding-left: 1rem; /* Reduce container padding for small screens */
+        padding-right: 1rem;
+    }
+
+    .review-slider {
+        gap: 0.75rem; /* Less gap between slides for small screens */
+        padding-left: 1rem; /* Add a little padding to the left for better spacing */
+    }
+
+    .slide {
+        min-width: 180px; /* Narrower slides for small screens */
+        padding: 1rem; /* Smaller padding inside slides */
+    }
+
+    .slide h3 {
+        font-size: 1rem; /* Smaller heading font size */
+    }
+
+    .slide p {
+        font-size: 0.85rem; /* Smaller text for better readability */
     }
  }
