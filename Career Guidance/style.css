@@ -266,6 +266,153 @@ section{
     color: var(--black);
 }
 
+/* Expert Section Styling */
+.expert {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; /* Adds padding on the top and bottom */
+    background: var(--light-bg);
+    gap: 30px; /* Space between each card */
+}
+/* Section Title Styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px; /* Adds space below the section */
+    color: var(--main-color); /* Set the main color for text */
+}
+
+.section-title h1 {
+    font-size: 3rem; /* Size for the main heading */
+    font-weight: bold; /* Makes the heading bold */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.section-title p {
+    font-size: 1.2rem; /* Size for the paragraph */
+    color: var(--light-black); /* Sets a secondary color for the text */
+}
+
+/* Card List Container */
+.expert .card-list {
+    display: flex;
+    flex-wrap: wrap; /* Ensures cards wrap to next row */
+    justify-content: space-around; /* Distributes space between cards */
+    gap: 30px; /* Space between each card */
+    max-width: 1200px; /* Limits the overall width of the card container */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes bullet points */
+    box-sizing: border-box;
+}
+
+/* Individual Card Item */
+.expert .card-item {
+    flex: 1 1 calc(33.333% - 60px); /* Ensures three cards per row */
+    max-width: 350px; /* Ensures the max width of each card */
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease; /* Smooth hover transition */
+    box-sizing: border-box;
+}
+
+/* Hover Effect */
+.expert .card-item:hover {
+    transform: translateY(-10px); /* Move up on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+    border-color: var(--main-color); /* Add border color on hover */
+}
+
+/* Card Link Styling */
+.expert .card-item .card-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Card Image Styling */
+.expert .card-item .card-link img {
+    width: 100%;
+    height: 200px; /* Set height for larger images */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Badge Styling */
+.expert .card-item .card-link h2 {
+    /* color: var(--white); Set text color to white */
+    padding: 10px 20px;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* Specific Badge Colors */
+.expert .card-item .badge-developer {
+    color: #5372F0;
+    background: #DDE4FF;
+}
+
+.expert .card-item .badge-marketer {
+    color: #B25A2B;
+    background: #FFE3D2;
+}
+
+.expert .card-item .badge-model {
+    color: #5A2A84; 
+    background: #EBDDF5;
+}
+
+.expert .card-item .badge-designer {
+    color: #B22485;
+    background: #F7DFF5;
+}
+
+.expert .card-item .badge-editor {
+    color: #856404;
+    background: #fff3cd;
+}
+.expert .card-item .badge-event {
+    color: #205C20;
+    background: #D6F8D6;
+}
+
+/* Card Title */
+.expert .card-item .card-link p {
+    font-size: 1.1rem; /* Increased font size */
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Card Button */
+.expert .card-item .card-link .card-button {
+    height: 40px; /* Increased size of button */
+    width: 40px;
+    color: var(--main-color);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    transform: rotate(-45deg);
+    transition: 0.2s ease;
+}
+
+.expert .card-item:hover .card-button {
+    color: var(--white);
+    background: var(--main-color);
+}
+
 /* study track content */
 
 .home-study_track{
