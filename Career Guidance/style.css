@@ -28,6 +28,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{
@@ -105,7 +106,7 @@ section{
  box-shadow: var(--box-shadow);
  align-items: center;
  justify-content: space-between;
- color: #8e44ad;
+ /* color: #8e44ad; */
 }
 
 .header .navbar a{
@@ -116,6 +117,12 @@ section{
 
 .header .navbar a:hover{
     color: var(--main-color);
+}
+
+.navbar a.active {
+    color: #72BF78; /* The color for active links */
+    font-weight: bold;
+    border-bottom: 2px solid #72BF78; /* Optional underline for active links */
 }
 
 #menu-btn{
