@@ -74,7 +74,7 @@ section{
 
 .btn{
     display: inline-block;
-    background: var(--black);
+    background: var(--main-color);
     margin-top: 1rem;
     color: var(--white);
     font-size: 1.7rem;
@@ -83,7 +83,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--main-color);
+    background: var(--black);
 }
 /* our services heading title */
 
@@ -91,7 +91,7 @@ section{
     text-align: center;
     margin-bottom: 3rem;
     font-size: 4rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--black);
 }
 
@@ -122,7 +122,7 @@ section{
 .navbar a.active {
     color: #72BF78; /* The color for active links */
     font-weight: bold;
-    border-bottom: 2px solid #72BF78; /* Optional underline for active links */
+    /* border-bottom: 2px solid #72BF78; Optional underline for active links */
 }
 
 #menu-btn{
@@ -221,7 +221,7 @@ section{
 }
 
 .services .box-container .box:hover{
-    background: var(--black);
+    background: var(--light-bg);
 }
 
 .services .box-container .box img{
@@ -234,6 +234,11 @@ section{
     padding-top: 1rem;
 }
 
+.services .box-container .box:hover h3 {
+    color: black; /* Change to black on hover */
+}
+
+/* About Us Section */
 .home-about{
     display: flex;
     align-items: center;
@@ -256,7 +261,7 @@ section{
 
 .home-about .content h3{
     font-size: 3rem;
-    color: var(--black);
+    color: var(--main-color);
 }
 
 .home-about .content p{
